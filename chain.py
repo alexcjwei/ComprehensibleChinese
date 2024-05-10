@@ -1,7 +1,9 @@
 from langchain.prompts import ChatPromptTemplate
 from langchain.chat_models import ChatOpenAI
 from langchain.schema.output_parser import StrOutputParser
+from helper import load_dotenv
 
+load_dotenv()
 
 prompt = ChatPromptTemplate.from_messages(
     [
